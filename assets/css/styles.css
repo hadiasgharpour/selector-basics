@@ -1,2 +1,15 @@
 /* styles.css */
 
+body{
+    background-color: rgb(50, 122, 167);
+    padding: 0 20px 20px 20px;
+    margin: 0 ;
+
+}
+
+p {
+    color: rgba(255, 255, 255, .6);
+    font-size: 1em;
+    font-family: "varela round", Arial, Helvetica, sans-serif;
+    
+}
