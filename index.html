@@ -1,31 +1,94 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<title>Selector Basics</title>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./assets/css/styles.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CSS Selector Playground</title>
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
+
 <body>
 
-	<article>
-<div id="logo">
-  Selector Basics
-</div>
-<h1>This is a Heading 1 with Text</h1>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-<p class="note"><strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
-<h2>Heading 2</h2>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-<p class="note"><strong>NOTE:</strong> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? </p>
-<h3>Heading 3</h3>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-<h3>Another Heading 3</h3>
-<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
-</article>
-	<script src="./assets/js/main.js"></script>
+    <article>
+
+        <div>
+            CSS Selector Playground
+        </div>
+
+        <h1>Designing with CSS Selectors</h1>
+
+        <p>
+            CSS selectors allow us to choose specific HTML elements and control
+            how they appear on a webpage. We can change typography, color,
+            spacing, backgrounds, borders, and many other visual properties.
+        </p>
+
+        <p>
+            Some selectors target every element of a particular type, while
+            others allow us to target specific elements or groups of elements.
+            Learning how selectors work gives us much more control over the
+            visual design of a webpage.
+        </p>
+
+        <p>
+            <strong>NOTE:</strong>
+            As you follow along, experiment with the values. Try changing
+            colors, type sizes, spacing, and other properties to see how the
+            browser responds.
+        </p>
+
+        <h2>Element Selectors</h2>
+
+        <p>
+            An element selector targets every instance of a particular HTML
+            tag. For example, a rule using the paragraph selector will affect
+            every paragraph on the page unless another more specific rule
+            overrides it.
+        </p>
+
+        <p>
+            <strong>NOTE:</strong>
+            CSS becomes much easier to understand when you make one change at
+            a time and immediately preview the result in the browser.
+        </p>
+
+        <h2>Classes and IDs</h2>
+
+        <p>
+            Classes and IDs give us more specific ways to select elements.
+            Classes can be reused on multiple elements, while an ID should
+            identify one unique element on a webpage.
+        </p>
+
+        <h3>Class Selectors</h3>
+
+        <p>
+            A class selector begins with a period in CSS. Classes are useful
+            when several elements should share the same visual style.
+        </p>
+
+        <h3>ID Selectors</h3>
+
+        <p>
+            An ID selector begins with a hashtag in CSS. IDs are useful when
+            you need to identify and style one unique element.
+        </p>
+
+        <h2>Experiment</h2>
+
+        <p>
+            The best way to learn CSS is to experiment. Change the code,
+            refresh the page, and observe what happens. If something does not
+            work, inspect the selector, property, value, punctuation, and file
+            path before assuming the entire page is broken.
+        </p>
+
+    </article>
+
+    <script src="./assets/js/main.js"></script>
+
 </body>
+
 </html>
