@@ -1,3 +1,3 @@
 // main.js
 
-console.log("Hello, World!");
+// We will use JavaScript later in the course.
